@@ -1,0 +1,27 @@
+# macOS files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage reports
+coverage/
