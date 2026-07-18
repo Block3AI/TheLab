@@ -84,4 +84,20 @@ Projects
 - javascript-bootcamp
 - crypto-portfolio-analyzer
 - block3ai-dashboard
+- basic-investment-calculator
 - notes
+
+---
+
+# July 18, 2026
+
+## Basic Investment Calculator
+
+### Completed
+
+- Added a README explaining how to run and use the browser-based calculator.
+- Added a project `.gitignore` for editor settings, local environment files, logs, dependencies, and generated output.
+
+### Next Steps
+
+- Publish the calculator project and documentation to GitHub.
