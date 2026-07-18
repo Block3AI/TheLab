@@ -44,7 +44,31 @@ git commit
 
 ---
 
-# July 14, 2026
+# Developer Log
 
-(previous entry)
+## Week 0 – Development Environment Verification
 
+**Date:** July 17, 2026
+
+### Completed
+- Installed and verified Node.js
+- Verified Git installation
+- Created first JavaScript program (`hello.js`)
+- Successfully executed Node program
+- Initialized Git repository
+- Added `.gitignore`
+- Created initial commits
+
+### Tools Checked
+
+| Tool | Status | Notes |
+|-------|--------|-------|
+| Cursor | ✅ Working | Integrated terminal functioning correctly |
+| Node.js | ✅ Working | `node -v` successful |
+| npm | ✅ Working | Package manager available and up to date |
+| Git | ✅ Working | Repository initialized and commits successful |
+| GitHub | ✅ Working | Ready for future pushes |
+
+### Items Requiring Attention
+
+- None at this time.
