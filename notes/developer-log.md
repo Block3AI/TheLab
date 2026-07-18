@@ -72,3 +72,16 @@ git commit
 ### Items Requiring Attention
 
 - None at this time.
+
+## Block3AI Workspace
+
+Repository
+
+https://github.com/Block3AI/TheLab
+
+Projects
+
+- javascript-bootcamp
+- crypto-portfolio-analyzer
+- block3ai-dashboard
+- notes
