@@ -1,9 +1,9 @@
-const cryptoSymbol = 'BTC';
-const walletLabel = 'Long-Term Savings';
-const btcAmount = 0.3;
-const btcPrice = 118000;
-const isActive = true;
+let crypto = "ETH";
+let walletLabel = "Trading Wallet";
+let btcAmount = 3;
+let btcPrice = 3800;
+let isActive = false;
 
 console.log(
-  `${walletLabel} wallet: ${btcAmount} ${cryptoSymbol} at $${btcPrice.toLocaleString()} each. Active: ${isActive}.`
+  `${walletLabel}: ${btcAmount} ${crypto} at $${btcPrice.toLocaleString()} each. Active: ${isActive}.`
 );
