@@ -1,20 +1,24 @@
-let btcAmount = 0.25;
-let btcPrice = 60000;
-
-function printPortfolioValue(amount, price) {
-  const portfolioValue = amount * price;
-  console.log(`Portfolio value: $${portfolioValue.toLocaleString()}`);
+function calculatePortfolioValue(amount, price) {
+  return amount * price;
 }
 
-// Test case 1
-printPortfolioValue(btcAmount, btcPrice);
+function formatCurrency(value) {
+  return value.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+}
 
-// Test case 2: change the amount and price.
-btcAmount = 0.5;
-btcPrice = 65000;
-printPortfolioValue(btcAmount, btcPrice);
+const portfolios = [
+  { symbol: "BTC", amount: 0.25, price: 60000 },
+  { symbol: "ETH", amount: 2, price: 3500 },
+  { symbol: "SOL", amount: 10, price: 150 },
+];
 
-// Test case 3: change the amount and price again.
-btcAmount = 1.2;
-btcPrice = 67500;
-printPortfolioValue(btcAmount, btcPrice);
+console.assert(calculatePortfolioValue(0.25, 60000) === 15000, "BTC value should be 15000");
+console.assert(formatCurrency(15000) === "$15,000.00", "Currency should be formatted in USD");
+
+for (const { symbol, amount, price } of portfolios) {
+  const value = calculatePortfolioValue(amount, price);
+  console.log(`${symbol} portfolio value: ${formatCurrency(value)}`);
+}
