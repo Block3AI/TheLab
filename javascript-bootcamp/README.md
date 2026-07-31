@@ -47,8 +47,8 @@ javascript-bootcamp/
 ## Start Week 1
 
 ```bash
-cd week-01-fundamentals/starter
+cd week-01-fundamentals/projects/investment-calculator
 node index.js
 ```
 
-The starter runs without installing packages. Complete the `TODO` items in `exercises.js` and `calculator.js`, then rerun the command to check your progress.
+The project runs without installing packages. Week 1 also includes a standalone variables lesson and a crypto calculator functions example under `week-01-fundamentals/`.

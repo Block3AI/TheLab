@@ -1,4 +1,4 @@
-# Week 1 - Day 1: Variables, Data Types & Strings
+# Week 1 - Lesson 1: Variables, Data Types & Strings
 
 ## Overview
 
@@ -30,7 +30,7 @@ The program simulates a simple cryptocurrency wallet by storing wallet informati
 
 ```javascript
 let crypto = "ETH";
-let wallet = "Trading Wallet";
+let walletLabel = "Trading Wallet";
 let cryptoAmount = 3;
 let cryptoPrice = 3800;
 let isActive = false;
@@ -41,13 +41,7 @@ let isActive = false;
 ## Expected Output
 
 ```text
-Wallet Summary
---------------
-Wallet: Trading Wallet
-Crypto: ETH
-Amount: 3
-Price: $3800
-Active: false
+Trading Wallet: 3 ETH at $3,800 each. Active: false.
 ```
 
 ---
@@ -57,7 +51,7 @@ Active: false
 From the project directory, run:
 
 ```bash
-node week-1-fundamentals.js
+node index.js
 ```
 
 After making changes to any variable, save the file and rerun the command.
@@ -78,20 +72,14 @@ By completing this exercise I practiced:
 
 ## Git Commit
 
-```bash
-git add .
-git commit -m "week1-day1-variables-types-strings"
-```
-
----
-
 ## Project Structure
 
 ```
-javascript-bootcamp/
-│
-├── week-1-fundamentals.js
-└── README.md
+week-01-fundamentals/
+└── lessons/
+    └── 01-variables-and-types/
+        ├── index.js
+        └── README.md
 ```
 
 ---

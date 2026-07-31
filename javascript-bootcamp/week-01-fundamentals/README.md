@@ -18,27 +18,40 @@ By the end of the week, you should be able to:
 
 | Day | Topic | Practice |
 | --- | --- | --- |
-| 1 | Values, variables, and types | Complete `describeInvestor` |
-| 2 | Operators and template strings | Finish the contribution calculation |
-| 3 | Functions and return values | Complete `calculateFutureValue` |
-| 4 | Conditionals | Add investment-risk messaging |
+| 1 | Values, variables, and types | Run the variables-and-types lesson |
+| 2 | Operators and template strings | Explore the investment calculator inputs |
+| 3 | Functions and return values | Review `calculateFutureValue` |
+| 4 | Conditionals | Review the investment-risk message |
 | 5 | Loops | Print yearly investment snapshots |
-| 6 | Review and refactor | Remove duplicate logic and improve names |
-| 7 | Ship | Complete the challenge and commit it |
+| 6 | Review and refactor | Improve names and remove duplication |
+| 7 | Ship | Add a scenario and commit it |
 
-## Run the starter
+## Folder structure
+
+```text
+week-01-fundamentals/
+├── lessons/
+│   └── 01-variables-and-types/    # First standalone lesson
+└── projects/
+    ├── investment-calculator/     # Week 1 command-line project
+    └── crypto-calculator/         # Small functions practice project
+```
+
+## Run the investment calculator
 
 ```bash
-cd starter
+cd projects/investment-calculator
 node index.js
 ```
 
+Run the first lesson with `node lessons/01-variables-and-types/index.js`, or try the crypto functions example with `node projects/crypto-calculator/index.js`.
+
 ## Tasks
 
-1. Complete every `TODO` in `starter/exercises.js`.
-2. Complete the calculator functions in `starter/calculator.js`.
+1. Read and run `lessons/01-variables-and-types`.
+2. Review the helper functions in `projects/investment-calculator`.
 3. Change the sample investor and verify the printed output changes.
-4. Add one new scenario of your own in `starter/index.js`.
+4. Add one new scenario of your own in `projects/investment-calculator/index.js`.
 5. Commit your finished work with a meaningful message.
 
 ## Stretch challenge
