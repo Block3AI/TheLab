@@ -34,7 +34,8 @@ week-01-fundamentals/
 │   └── 01-variables-and-types/    # First standalone lesson
 └── projects/
     ├── investment-calculator/     # Week 1 command-line project
-    └── crypto-calculator/         # Small functions practice project
+    ├── crypto-calculator/         # Small functions practice project
+    └── token-converter/           # Token-to-USD conversion practice
 ```
 
 ## Run the investment calculator
@@ -44,7 +45,7 @@ cd projects/investment-calculator
 node index.js
 ```
 
-Run the first lesson with `node lessons/01-variables-and-types/index.js`, or try the crypto functions example with `node projects/crypto-calculator/index.js`.
+Run the first lesson with `node lessons/01-variables-and-types/index.js`, try the crypto functions example with `node projects/crypto-calculator/index.js`, or run the token converter with `node projects/token-converter/index.js`.
 
 ## Tasks
 
