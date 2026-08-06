@@ -80,3 +80,47 @@ Next Focus
 
 * Build confidence with arrays, objects, and modules.
 * Continue turning JavaScript concepts into small runnable projects.
+
+-------------
+August 5, 2026
+
+Focus Today
+
+Building JavaScript fundamentals by completing hands-on projects and applying functions to real-world crypto use cases.
+
+Completed
+
+* Completed the Crypto Calculator project.
+* Built reusable JavaScript functions to calculate cryptocurrency portfolio values and profit/loss.
+* Added automated validation using console.assert to verify expected function outputs.
+* Improved the project with a comprehensive README.md including setup instructions and manual test cases.
+* Completed the Token Converter project, practicing JavaScript functions and value conversion logic.
+* Continued following the JavaScript Bootcamp project workflow from planning to implementation and documentation.
+
+What I Learned
+
+* Breaking functionality into small, reusable functions makes code easier to test and maintain.
+* Automated assertions provide a simple way to verify code behaves as expected during development.
+* Well-written README files are an important part of delivering a complete software project.
+* Hands-on projects reinforce JavaScript fundamentals more effectively than passive learning alone.
+
+Project Updates
+
+Crypto Calculator
+
+* Added portfolio value calculations.
+* Implemented profit/loss calculations.
+* Added currency formatting helper.
+* Created automated assertions for key functions.
+* Documented the project with a professional README.
+
+Token Converter
+
+* Practiced function creation and value conversion.
+* Reinforced JavaScript fundamentals through another real-world coding exercise.
+
+Next Steps
+
+* Continue progressing through the JavaScript Bootcamp.
+* Build additional projects that reinforce core JavaScript concepts.
+* Continue documenting completed projects and maintaining the developer journal.
