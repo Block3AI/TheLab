@@ -25,17 +25,37 @@ console.assert(
   'Missing values should return a helpful message.',
 );
 
+const columns = [
+  { label: 'TOKEN', width: 7 },
+  { label: 'AMOUNT', width: 10 },
+  { label: 'PRICE (USD)', width: 15 },
+  { label: 'TOTAL (USD)', width: 15 },
+];
+
+const separator = columns.map(({ width }) => '-'.repeat(width)).join('-+-');
+const header = columns.map(({ label, width }) => label.padEnd(width)).join(' | ');
+
+console.log(header);
+console.log(separator);
+
 for (const { symbol, amount, price } of conversions) {
   const usdValue = convertToUsd(amount, price);
 
   if (typeof usdValue === 'string') {
-    console.log(`${symbol}: ${usdValue}`);
+    console.log(`${symbol.padEnd(7)} | ${usdValue}`);
   } else {
-    const formattedValue = usdValue.toLocaleString('en-US', {
+    const formatUsd = (value) => value.toLocaleString('en-US', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     });
 
-    console.log(`${amount} ${symbol} at $${price.toLocaleString()} each = $${formattedValue}`);
+    const row = [
+      symbol,
+      amount.toLocaleString('en-US'),
+      `$${formatUsd(price)}`,
+      `$${formatUsd(usdValue)}`,
+    ];
+
+    console.log(row.map((value, index) => value.padEnd(columns[index].width)).join(' | '));
   }
 }
