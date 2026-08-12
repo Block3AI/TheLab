@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block3AI Crypto Investment Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <h1>Block3AI Crypto Investment Calculator</h1>
+      <p>Enter your investment details to see value, profit or loss, and ROI.</p>
+
+      <form id="investment-form">
+        <fieldset>
+          <legend>Core inputs</legend>
+
+          <label>
+            Initial investment ($)
+            <input
+              type="number"
+              id="initial-investment"
+              name="initialInvestment"
+              min="0"
+              step="0.01"
+              required
+            />
+          </label>
+
+          <label>
+            Asset price at buy ($)
+            <input
+              type="number"
+              id="buy-price"
+              name="buyPrice"
+              min="0"
+              step="0.01"
+              required
+            />
+          </label>
+
+          <label>
+            Asset price now or future price ($)
+            <input
+              type="number"
+              id="future-price"
+              name="futurePrice"
+              min="0"
+              step="0.01"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <fieldset class="stretch">
+          <legend>Stretch inputs</legend>
+
+          <label>
+            Years held (for annualized return)
+            <input type="number" id="years-held" name="yearsHeld" min="0.01" step="0.01" />
+          </label>
+
+          <div class="preset-buttons">
+            <span>Scenario presets</span>
+            <button type="button" data-preset="btc">BTC</button>
+            <button type="button" data-preset="eth">ETH</button>
+          </div>
+        </fieldset>
+
+        <button type="button" id="calculate-button">Calculate</button>
+      </form>
+
+      <p id="error-message" class="error" hidden></p>
+
+      <section id="results" hidden>
+        <h2>Core outputs (MVP)</h2>
+        <dl class="results-grid">
+          <div>
+            <dt>Coins purchased</dt>
+            <dd id="coins-purchased">0</dd>
+          </div>
+          <div>
+            <dt>Current/future value ($)</dt>
+            <dd id="future-value">$0.00</dd>
+          </div>
+          <div>
+            <dt>Profit/Loss ($)</dt>
+            <dd id="profit-loss">$0.00</dd>
+          </div>
+          <div>
+            <dt>ROI (%)</dt>
+            <dd id="roi">0%</dd>
+          </div>
+        </dl>
+
+        <section id="stretch-results" hidden>
+          <h3>Stretch outputs</h3>
+          <dl class="results-grid">
+            <div>
+              <dt>Annualized return (simple)</dt>
+              <dd id="annualized-return">—</dd>
+            </div>
+            <div>
+              <dt>Break-even price</dt>
+              <dd id="break-even-price">$0.00</dd>
+            </div>
+          </dl>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

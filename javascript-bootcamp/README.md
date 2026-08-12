@@ -19,22 +19,28 @@ node --version
 | Week | Focus | Deliverable |
 | --- | --- | --- |
 | 1 | JavaScript fundamentals | Command-line investment calculator |
-| 2 | Arrays, objects, and modules | Crypto watchlist data tool |
-| 3 | HTML, CSS, DOM, and events | Interactive browser dashboard |
-| 4 | Async JavaScript and APIs | Market-data viewer with loading and error states |
-| 5 | Node.js and backend basics | Small JSON API for a portfolio |
-| 6 | Capstone and deployment | Polished Web3 or AI mini-project |
+| 2 | HTML, CSS, DOM, and forms | Block3AI Crypto Investment Calculator |
+| 3 | Logic, objects, and arrays | Block3AI Portfolio Tracker |
+| 4 | Map, filter, and reduce | Portfolio Tracker v2 |
+| 5 | Async JavaScript and APIs | Crypto Market Dashboard |
+| 6 | Debugging and React/Next.js | Block3AI Developer Dashboard |
 
 ## Folder structure
 
 ```text
 javascript-bootcamp/
-├── week-01-fundamentals/     # Start here
-├── week-02-data-and-modules/
-├── week-03-dom-and-events/
-├── week-04-async-and-apis/
-├── week-05-node-and-backend/
-└── week-06-capstone/
+├── week-01-fundamentals/       # Start here
+│   └── projects/investment-calculator/
+├── week-02-html-css-dom/
+│   └── projects/crypto-investment-calculator/
+├── week-03-objects-arrays/
+│   └── projects/portfolio-tracker/
+├── week-04-map-filter-reduce/
+│   └── projects/portfolio-tracker-v2/
+├── week-05-async-apis/
+│   └── projects/crypto-market-dashboard/
+└── week-06-react-nextjs/
+    └── projects/developer-dashboard/
 ```
 
 ## How to use this repository
